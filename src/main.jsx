@@ -10,6 +10,7 @@ import "./index.css";
 import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./redux/store/store.js";
+import ServiceHome from "./Components/ServiceHome.jsx";
 
 const router = createBrowserRouter([
   {
@@ -42,5 +43,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Provider store={store}>
       <RouterProvider router={router} />
     </Provider>
+    <ServiceHome></ServiceHome>
   </React.StrictMode>
 );
