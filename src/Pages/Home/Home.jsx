@@ -1,7 +1,11 @@
+import ServiceHome from '../../Components/ServiceHome';
 import './Home.css';
 
 export default function Home() {
   return (
-    <div>Home</div>
+    <div>Home
+      <ServiceHome></ServiceHome>
+    </div>
+    
   )
 }
