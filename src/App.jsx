@@ -7,10 +7,10 @@ import ServiceHome from "./Components/ServiceHome";
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
   
       <Outlet />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

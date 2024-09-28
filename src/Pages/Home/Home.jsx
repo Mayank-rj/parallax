@@ -3,7 +3,7 @@ import './Home.css';
 
 export default function Home() {
   return (
-    <div>Home
+    <div  className='container-fluid'>
       <ServiceHome></ServiceHome>
     </div>
     
