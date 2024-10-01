@@ -1,0 +1,15 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+.bigyes{
+    display: flex;
+    align-items: center;
+}
+.yes{
+    opacity: 1;
+    --comp-opacity: 1;
+    transform: translateX(0px) translateY(0px) scaleX(1) scaleY(1) rotate(355deg) skewX(0deg) skewY(0deg);
+    --comp-rotate-z: 355deg;
+    /* margin-left: 50%; */
+}

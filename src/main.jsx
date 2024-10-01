@@ -11,6 +11,7 @@ import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom"
 import { Provider } from "react-redux";
 import { store } from "./redux/store/store.js";
 import ServiceHome from "./Components/ServiceHome.jsx";
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 const router = createBrowserRouter([
   {
@@ -39,10 +40,14 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <Provider store={store}>
+
+ <React.StrictMode>
+   <ParallaxProvider>
+    {/* <Provider store={store}>
       <RouterProvider router={router} />
-    </Provider>
-    {/* <ServiceHome></ServiceHome> */}
+    </Provider> */}
+    <ServiceHome></ServiceHome>
+    </ParallaxProvider>
   </React.StrictMode>
+ 
 );
